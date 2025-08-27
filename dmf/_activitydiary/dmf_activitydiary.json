@@ -1,0 +1,632 @@
+{
+    "dmfs": [
+        {
+            "widgets": [
+                {
+                    "name": "e1_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/action_add_activity",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "e2_widget",
+                    "UI_layout_num": "1",
+                    "text": "Activity title",
+                    "resource-id": "",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "e3_widget",
+                    "UI_layout_num": "2",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/action_edit_done",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "add_name",
+                    "UI_layout_num": "2",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "extra_object",
+                    "UI_layout_num": "3",
+                    "text": "add_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "pre_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "search_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                }
+            ],
+            "events": [
+                {
+                    "widget": "e1_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e2_widget",
+                    "action": "edit",
+                    "text": "random",
+                    "force": true
+                },
+                {
+                    "widget": "e3_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                }
+            ],
+            "impacts": [
+                {
+                    "operator": "add",
+                    "object": "add_name.text"
+                }
+            ],
+            "preconditions": [
+                {
+                    "widget": "e1_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "widget": "search_widget",
+                    "relation": "not in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "7e4c9",
+                    "relation": "smaller",
+                    "widget": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "smaller::5",
+                    "widget": "pre_widget"
+                }
+            ],
+            "name": "add 7e4c9",
+            "type": "add",
+            "datatype": "7e4c9",
+            "post-conditions": [
+                {
+                    "widget": "extra_object",
+                    "relation": "in",
+                    "UI_layout_num": "3",
+                    "datatype": ""
+                }
+            ],
+            "proportion": "10"
+        },
+        {
+            "widgets": [
+                {
+                    "name": "e1_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "4"
+                },
+                {
+                    "name": "e2_widget",
+                    "UI_layout_num": "1",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/action_edit_delete",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "delete_name",
+                    "UI_layout_num": "1",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "remove_object",
+                    "UI_layout_num": "2",
+                    "text": "delete_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                }
+            ],
+            "events": [
+                {
+                    "widget": "e1_widget",
+                    "action": "longclick",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e2_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                }
+            ],
+            "impacts": [
+                {
+                    "operator": "delete",
+                    "object": "delete_name.text"
+                }
+            ],
+            "preconditions": [
+                {
+                    "widget": "e1_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                }
+            ],
+            "name": "delete 7e4c9",
+            "type": "delete",
+            "datatype": "7e4c9",
+            "post-conditions": [
+                {
+                    "widget": "remove_object",
+                    "relation": "not in",
+                    "UI_layout_num": "2",
+                    "datatype": ""
+                }
+            ],
+            "proportion": "10"
+        },
+        {
+            "widgets": [
+                {
+                    "name": "e1_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "2"
+                },
+                {
+                    "name": "e2_widget",
+                    "UI_layout_num": "1",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "e3_widget",
+                    "UI_layout_num": "2",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "e4_widget",
+                    "UI_layout_num": "3",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_color",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "e5_widget",
+                    "UI_layout_num": "4",
+                    "text": "SELECT",
+                    "resource-id": "",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "e6_widget",
+                    "UI_layout_num": "5",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "e7_widget",
+                    "UI_layout_num": "6",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/action_edit_done",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "add_name",
+                    "UI_layout_num": "6",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "extra_object",
+                    "UI_layout_num": "7",
+                    "text": "add_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "pre_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "delete_name",
+                    "UI_layout_num": "1",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "remove_object",
+                    "UI_layout_num": "7",
+                    "text": "delete_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/edit_activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "search_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                }
+            ],
+            "events": [
+                {
+                    "widget": "e1_widget",
+                    "action": "longclick",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e2_widget",
+                    "action": "edit",
+                    "text": "Cinrema",
+                    "force": true
+                },
+                {
+                    "widget": "e3_widget",
+                    "action": "edit",
+                    "text": "e",
+                    "force": true
+                },
+                {
+                    "widget": "e4_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e5_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e6_widget",
+                    "action": "edit",
+                    "text": "random",
+                    "force": true
+                },
+                {
+                    "widget": "e7_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                }
+            ],
+            "impacts": [
+                {
+                    "operator": "delete",
+                    "object": "delete_name.text"
+                },
+                {
+                    "operator": "add",
+                    "object": "add_name.text"
+                }
+            ],
+            "preconditions": [
+                {
+                    "widget": "e1_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "widget": "search_widget",
+                    "relation": "not in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "smaller::5",
+                    "widget": "pre_widget"
+                }
+            ],
+            "name": "edit 7e4c9",
+            "type": "edit",
+            "datatype": "7e4c9",
+            "post-conditions": [
+                {
+                    "widget": "extra_object",
+                    "relation": "in",
+                    "UI_layout_num": "7",
+                    "datatype": ""
+                },
+                {
+                    "widget": "remove_object",
+                    "relation": "not in",
+                    "UI_layout_num": "7",
+                    "datatype": ""
+                }
+            ],
+            "proportion": "10"
+        },
+        {
+            "widgets": [
+                {
+                    "name": "e1_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/action_filter",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "e2_widget",
+                    "UI_layout_num": "1",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/search_src_text",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "e3_widget",
+                    "UI_layout_num": "2",
+                    "text": "",
+                    "resource-id": "",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "search_name",
+                    "UI_layout_num": "2",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/search_src_text",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "0"
+                },
+                {
+                    "name": "search_object",
+                    "UI_layout_num": "3",
+                    "text": "search_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                }
+            ],
+            "events": [
+                {
+                    "widget": "e1_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                },
+                {
+                    "widget": "e2_widget",
+                    "action": "edit",
+                    "text": "7e4c9::random",
+                    "force": true
+                },
+                {
+                    "widget": "e3_widget",
+                    "action": "back",
+                    "text": "",
+                    "force": true
+                }
+            ],
+            "impacts": [],
+            "preconditions": [
+                {
+                    "widget": "e1_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "widget": "",
+                    "relation": "is not empty",
+                    "UI_layout_num": "",
+                    "datatype": "7e4c9"
+                }
+            ],
+            "name": "search 7e4c9",
+            "type": "search",
+            "datatype": "7e4c9",
+            "post-conditions": [
+                {
+                    "widget": "search_object",
+                    "relation": "in",
+                    "UI_layout_num": "3",
+                    "datatype": ""
+                }
+            ],
+            "proportion": "10"
+        },
+        {
+            "widgets": [
+                {
+                    "name": "e1_widget",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "2"
+                },
+                {
+                    "name": "pre_widget",
+                    "UI_layout_num": "0",
+                    "text": "What are you doing?",
+                    "resource-id": "",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                },
+                {
+                    "name": "read_name",
+                    "UI_layout_num": "0",
+                    "text": "",
+                    "resource-id": "de.rampro.activitydiary:id/activity_name",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": "2"
+                },
+                {
+                    "name": "read_object",
+                    "UI_layout_num": "1",
+                    "text": "read_name.text",
+                    "resource-id": "de.rampro.activitydiary:id/snackbar_text",
+                    "class": "",
+                    "content-desc": "",
+                    "xpath": "",
+                    "instance": ""
+                }
+            ],
+            "events": [
+                {
+                    "widget": "e1_widget",
+                    "action": "click",
+                    "text": "",
+                    "force": true
+                }
+            ],
+            "impacts": [],
+            "preconditions": [
+                {
+                    "widget": "e1_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                },
+                {
+                    "widget": "pre_widget",
+                    "relation": "in",
+                    "UI_layout_num": "0",
+                    "datatype": ""
+                }
+            ],
+            "name": "read 7e4c9",
+            "type": "read",
+            "datatype": "7e4c9",
+            "post-conditions": [
+                {
+                    "widget": "read_object",
+                    "relation": "in",
+                    "UI_layout_num": "1",
+                    "datatype": ""
+                }
+            ],
+            "proportion": "1"
+        }
+    ]
+}
